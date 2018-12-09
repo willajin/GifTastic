@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +19,40 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" media="screen">
-    
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Harry Potter Giphy Search</h1>
+            <p class="lead"></p>
+        </div>
+
+        <div class="row">
+            <!-- Buttons -->
+            <div id="buttons-div"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Gifs -->
+                <div id="gifs-div"></div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Search bar -->
+                <form id="gif-form">
+                    <h5>Add an item</h5>
+                    <input type="text" id="gif-input"><br>
+
+                    <!-- Button triggers new gif item to be added -->
+                    <input id="add-gif" type="submit" value="Add an item">
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
