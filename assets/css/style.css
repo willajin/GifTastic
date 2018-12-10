@@ -1,3 +1,7 @@
+body {
+    background-color: darkgray;
+}
+
 #buttons-div {
     padding: 5px;
 }

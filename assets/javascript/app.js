@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    // load music
+    var audio = new Audio("./assets/Harry_Potter_Theme_Song_Hedwigs_Theme.mp3");
+    audio.loop = true;
+    // play music
+    $(".play-button").on("click", function() {
+        audio.play();
+    });
+    // pause music
+    $(".pause-button").on("click", function() {
+        audio.pause();
+    });
+    
     // initial array of topics
     var topics = ["harry potter", "albus dumbledore", "hermionie granger", "ron weasley", "draco malfoy", "severus snape"];
 
@@ -49,12 +61,12 @@ $(document).ready(function () {
 
                 gifDiv.append(gifImg);
                 gifDiv.append(gifRating);
-                
+
                 $("#gifs-div").append(gifDiv);
             }
 
             // play/stop gif on click
-            $(".gif-img").on("click", function() {
+            $(".gif-img").on("click", function () {
                 // get data-state
                 var state = $(this).attr("data-state");
 
@@ -87,6 +99,9 @@ $(document).ready(function () {
 
         // create button
         createButtons();
+
+        // clear input after search
+        $("#gif-input").val("");
     });
 
     // create initial buttons
