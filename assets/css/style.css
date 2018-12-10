@@ -1,6 +1,30 @@
 body {
     background-color: darkgray;
+    font-family: 'Quattrocento', serif;
+    text-transform: uppercase;
 }
+
+.jumbotron {
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+}
+
+#logo {
+    height: 400px;
+    width: 400px;
+}
+
+.display-4 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+/* music buttons */
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+} 
 
 #buttons-div {
     padding: 5px;
@@ -8,4 +32,28 @@ body {
 
 .topic-button {
     margin: 5px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    background-color: white;
+    border: 2px solid white;
+    color: #343A40;
 }
+
+.topic-button:hover {
+    border: 2px solid #343A40;
+}
+
+.row {
+    padding-top: 10px;
+}
+
+#header {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#add-gif {
+    margin-top: 10px;
+}
+

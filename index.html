@@ -20,13 +20,17 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" media="screen">
 
+    <!-- Link Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Quattrocento" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
+            <!-- <img src="assets/images/harry-potter-logo.png" id="logo" />-->
             <h1 class="display-4">Harry Potter Giphy Search</h1>
-            <p class="lead"></p>
+            <hr class="my-4">
             <div id="musicControls" class="text-center">
                 <button class="btn btn-dark btn-xs play-button">
                   <span class="fa fa-music"></span>Play</button>
@@ -41,19 +45,19 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <!-- Gifs -->
                 <div id="gifs-div"></div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-4" id="col-search">
                 <!-- Search bar -->
                 <form id="gif-form">
-                    <h5>Add an item</h5>
+                    <h5 id="header">Search</h5>
                     <input type="text" id="gif-input"><br>
 
                     <!-- Button triggers new gif item to be added -->
-                    <input id="add-gif" type="submit" value="Add an item">
+                    <input class="btn btn-dark btn-xs" id="add-gif" type="submit" value="Add">
                 </form>
             </div>
         </div>
