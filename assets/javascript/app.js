@@ -34,7 +34,7 @@ $(document).ready(function () {
         $("#gifs-div").empty();
 
         var gif = $(this).attr("data-topic");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=Qh3VnNKk5dvOqMdcB1IpEoJmdQaBsTLp&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=Qh3VnNKk5dvOqMdcB1IpEoJmdQaBsTLp&limit=10";
         console.log(queryURL);
 
         // ajax call
